@@ -2,7 +2,7 @@ import Image from "next/image"
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 
 export default function Header() {  
@@ -11,7 +11,7 @@ export default function Header() {
       <Container fluid>
         <Navbar.Brand>
             <Link href="/">
-                <Image src="/logo.gif" width={300} height={60} />
+                <Image src="/logo.gif" width={300} height={60} alt="Herbert Web Developer" />
             </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

@@ -29,7 +29,7 @@ export default function Home() {
         strength={-200}
     >
         <Background className="custom-bg">
-            <img src="/fundo1.jpg" alt="Rw Torres" />
+            <Image src="/fundo1.jpg" alt="Rw Torres" />
         </Background>
         <div className="container content-parallax" >
           <h1>RW Torres</h1>
@@ -53,7 +53,7 @@ export default function Home() {
     strength={-200}
     >
     <Background className="custom-bg">
-        <img src="/fundo2.jfif" alt="Rw Torres" />
+        <Image src="/fundo2.jfif" alt="Rw Torres" />
     </Background>
     <div className="container content-parallax">
       <h1>RW Torres</h1>
