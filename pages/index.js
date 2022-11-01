@@ -29,7 +29,7 @@ export default function Home() {
         strength={-200}
     >
         <Background className="custom-bg">
-            <Image src="/fundo1.jpg" alt="Rw Torres" />
+            <Image src="/fundo1.jpg" alt="Rw Torres" width={1980} height={1080}/>
         </Background>
         <div className="container content-parallax" >
           <h1>RW Torres</h1>
@@ -53,7 +53,7 @@ export default function Home() {
     strength={-200}
     >
     <Background className="custom-bg">
-        <Image src="/fundo2.jfif" alt="Rw Torres" />
+        <Image src="/fundo2.jfif" alt="Rw Torres" width={1980} height={1080} />
     </Background>
     <div className="container content-parallax">
       <h1>RW Torres</h1>
@@ -103,7 +103,7 @@ export default function Home() {
                 </div>
 
                 <div className='col col-md-4'>
-                  <Image src="/eu.png" width={286} height={358} />
+                  <Image src="/eu.png" width={286} height={358} alt="Herbert Amaro Santana" />
                 </div>
               </div>
             </div>
