@@ -11,7 +11,7 @@ export default function Header() {
       <Container fluid>
         <Navbar.Brand>
             <Link href="/">
-                <Image src="/logo.gif" width={300} height={60} alt="Herbert Web Developer" />
+                <Image src="/logo.gif" width={300} height={60} alt="Herbert Web Developer" priority />
             </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

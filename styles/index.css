@@ -51,7 +51,7 @@
 body {
   background-color: #ddd;
     margin: 0;
-    font-family: 'Poppins', sans-serif !important !important;
+    font-family: 'Poppins', sans-serif !important;
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
@@ -347,9 +347,93 @@ ul{
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: ;
 }
 
 .titulo2{
   margin: 20px 0;
+}
+footer{
+  margin-top: 30px;
+  z-index: 9999;
+  position: relative;
+  width: 100%;
+  float: left;
+}
+footer .Waves_svg__waves{
+  position: absolute;
+  bottom: 120px;
+}
+
+footer .container {
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 9999;
+  position: relative;
+}
+
+footer a{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul{
+  list-style: none;
+}
+
+
+.footer{
+  width: 100%;
+  float:left;
+  z-index: 999;
+}
+
+.footer{
+  padding: 20px 0;
+}
+
+footer li{
+  border: 0px;
+}
+.titulo{
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 50px !important;
+}
+.titulo svg{
+width: 32px;
+}
+
+.list-contato{
+  text-align: center;
+  padding: 30px 2   5px;
+}
+
+.list-contato h5{
+  font-weight: bold;
+}
+
+.list-contato svg{
+  max-width: 100px;
+  height: 100px;
+  background: #000;
+  color: #fff;
+  border-radius: 100px;
+  padding: 20px;
+  
+}
+
+
+.pagina-contato{
+  min-height: 70vh;
+  float: left;
+  width: 100%;
+}
+
+
+.whatsapp{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }

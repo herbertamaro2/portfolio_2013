@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import Button from 'react-bootstrap/Button';
-import { Parallax, Background } from 'react-parallax';
+import PortfolioDiv from '../components/portfolio';
 
 export default function Home() {
   const scroll2El = elID => {
@@ -20,59 +20,6 @@ export default function Home() {
       scroll2El(goto);
     }, 100);
   }
-
-  const Container = () => (
-    <div>
-    <Parallax
-        blur={{ min: -35, max: 35 }}
-        bgImageAlt="the dog"
-        strength={-200}
-    >
-        <Background className="custom-bg">
-            <Image src="/fundo1.jpg" alt="Rw Torres" width={1980} height={1080}/>
-        </Background>
-        <div className="container content-parallax" >
-          <h1>RW Torres</h1>
-          <h3>Website</h3>
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print,
-            and publishing industries for previewing layouts and visual mockups.</p>
-          <Button className="learn-more">
-                  <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                  </span>
-                  <span className="button-text">GO TO LINK</span>
-          </Button>
-        </div>
-        <div style={{ height: '100px' }} />
-    </Parallax>
-
-
-    <Parallax
-    blur={{ min: -35, max: 35 }}
-    bgImageAlt="the dog"
-    strength={-200}
-    >
-    <Background className="custom-bg">
-        <Image src="/fundo2.jfif" alt="Rw Torres" width={1980} height={1080} />
-    </Background>
-    <div className="container content-parallax">
-      <h1>RW Torres</h1>
-      <h3>Website</h3>
-      <p>Lorem ipsum is placeholder text commonly used in the graphic, print,
-        and publishing industries for previewing layouts and visual mockups.</p>
-      <Button className="learn-more">
-              <span className="circle" aria-hidden="true">
-                <span className="icon arrow"></span>
-              </span>
-              <span className="button-text" >GO TO LINK</span>
-      </Button>
-    </div>
-    <div style={{ height: '100px' }} />
-    </Parallax>
-    </div>
-    
-);
-
 
   return (
       <div>
@@ -103,7 +50,7 @@ export default function Home() {
                 </div>
 
                 <div className='col col-md-4'>
-                  <Image src="/eu.png" width={286} height={358} alt="Herbert Amaro Santana" />
+                  <Image src="/eu.png" width={286} height={358} alt="Herbert Amaro Santana" priority />
                 </div>
               </div>
             </div>
@@ -123,8 +70,7 @@ export default function Home() {
       </main>
       <section id="work">
         <div className="container"><h1 className="titulo2">Work</h1></div>
-        <Container className="work" />
-        <Container className="work" />
+        <PortfolioDiv />
       </section>
       <Footer />
     </div>
