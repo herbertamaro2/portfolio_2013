@@ -103,32 +103,35 @@ export default function Curriculum() {
 						<div className="yui-u">
 
 							<div className="job">
-								<h2>Facebook</h2>
-								<h3>Senior Interface Designer</h3>
-								<h4>2005-2007</h4>
-								<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+								<h2>Vaivo</h2>
+								<h3>Frontend Developer</h3>
+								<h4>2020</h4>
+								<p>Responsible for apply received layout from Adobe XD to be applied Laravel and Vuejs
+Maintenance of the trade platform and add features</p>
 							</div>
 
 							<div className="job">
-								<h2>Apple Inc.</h2>
-								<h3>Senior Interface Designer</h3>
-								<h4>2005-2007</h4>
-								<p>Progressively reconceptualize multifunctional thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+								<h2>WebFamily Agência Digital</h2>
+								<h3>Frontend Developer</h3>
+								<h4>2015-2020</h4>
+								<p>esponsible to create websites from zero (design to programming).
+Responsible for creating and maintaining the credit analysis platform (main project of the agency)
+Wordpress - VTEX - Vuejs - Laravel - Magento</p>
 							</div>
 
 							<div className="job">
-								<h2>Microsoft</h2>
-								<h3>Principal and Creative Lead</h3>
-								<h4>2004-2005</h4>
-								<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
+								<h2>Grupo THX</h2>
+								<h3>Webdesigner</h3>
+								<h4>2014-2015</h4>
+								<p>Responsible to create websites from zero (design to programming)  Teamwork in the development of some sites, creation of flyer, photographic books, business cards, banner, banners, etc.</p>
 							</div>
 
 
 							<div className="job last">
-								<h2>International Business Machines (IBM)</h2>
-								<h3>Lead Web Designer</h3>
-								<h4>2001-2004</h4>
-								<p>Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.</p>
+								<h2>My Connect Midia</h2>
+								<h3>Designer Gráfico</h3>
+								<h4>2012-2014</h4>
+								<p>Development of ELLITE Magazine, Teamwork in the development of some sites, creation of flyer, photographic books, business cards, banner, banners, etc.</p>
 							</div>
 
 						</div>

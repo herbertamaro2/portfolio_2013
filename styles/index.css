@@ -437,3 +437,33 @@ width: 32px;
   bottom: 30px;
   right: 30px;
 }
+
+.sub-menu{
+  margin-top: 0px;
+  float: right;
+  text-align: right;
+}
+#work .titulo2 h1 {
+  float: left;
+}
+.sub-menu button{
+  background: transparent;
+  border: 0px;
+  font-weight: 500;
+  padding: 15px auto !important;
+  font-size: 18px;
+  margin: 10px 15px;
+  box-shadow: none;
+}
+#work li{
+  border: 0px;
+}
+.sub-menu ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.work{
+  width: 100%;
+  float: left;
+}

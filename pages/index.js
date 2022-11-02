@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../layout/header'
@@ -6,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 import PortfolioDiv from '../components/portfolio';
 
 export default function Home() {
+
+  const [cat_portfolio, setCatPortfolio] = useState('website');
   const scroll2El = elID => {
     window.scrollTo({
       top: document.getElementById(elID).offsetTop - 10,
@@ -20,6 +23,8 @@ export default function Home() {
       scroll2El(goto);
     }, 100);
   }
+
+
 
   return (
       <div>
@@ -68,10 +73,9 @@ export default function Home() {
            <li></li>
         </ul>
       </main>
-      <section id="work">
-        <div className="container"><h1 className="titulo2">Work</h1></div>
-        <PortfolioDiv />
-      </section>
+      
+        <PortfolioDiv categoria={cat_portfolio} />
+      
       <Footer />
     </div>
   )

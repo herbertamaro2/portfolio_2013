@@ -1,14 +1,35 @@
 [
   {
     "nome": "Rw Torres Ltda",
-    "categoria": "Website",
+    "categoria": "website",
     "descricao": "Lorem Ipsum",
     "image": "/fundo1.jpg",
     "link": "/teste"
   },
   {
     "nome": "Rw Torres Ltda",
-    "categoria": "Website",
+    "categoria": "sistema",
+    "descricao": "Lorem Ipsum",
+    "image": "/fundo1.jpg",
+    "link": "/teste"
+  },
+  {
+    "nome": "Rw Torres Ltda",
+    "categoria": "ebook",
+    "descricao": "Lorem Ipsum",
+    "image": "/fundo1.jpg",
+    "link": "/teste"
+  },
+  {
+    "nome": "Rw Torres Ltda - Loja",
+    "categoria": "loja-virtual",
+    "descricao": "Lorem Ipsum",
+    "image": "/fundo1.jpg",
+    "link": "/teste"
+  },
+  {
+    "nome": "Rw Torres Ltda",
+    "categoria": "website",
     "descricao": "Lorem Ipsum",
     "image": "/fundo1.jpg",
     "link": "/teste"

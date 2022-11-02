@@ -7,27 +7,65 @@ export default function PortfolioDiv() {
   const [info, setInfo] = useState([]);
   const [loading, setLoading] = useState(true);
     
+  const PortfolioChange = (e) => {
+    e.preventDefault;
+       getProdutos(e);
+  };
+
+  
+  function getProdutos(e){
+    e.preventDefault;
+    fetch('/api/portfolio')
+    .then((res) => res.json())
+    .then((res) => {
+   const result = res.filter(categoria => categoria.categoria === e)
+   setInfo(result)
+   console.log(result);                
     
+    //console.log(info);
+   
+    
+    }).catch(err => {
+        console.log('Error 🙁');
+    });
+  }
     
   useEffect(() => {
-            fetch('/api/portfolio')
-            .then((res) => res.json())
-            .then((res) => {
-           setLoading(false);                  
-            setInfo(res);
-            console.log(setInfo);
-            
-            }).catch(err => {
-                console.log('Error 🙁');
-            });        
+
+    fetch('/api/portfolio')
+    .then((res) => res.json())
+    .then((res) => {
+   setLoading(false);
+   const result = res.filter(categoria => categoria.categoria === 'website')
+   setInfo(result)     
+    
+    }).catch(err => {
+        console.log('Error 🙁');
+    });
+          
     }, []);
 
-
-        
     
-       
     return(
-        <div className="work">
+
+      <section id="work">
+        <div className="titulo2">
+          <div className="container">
+            <h1>Work</h1>
+
+            <div className="sub-menu">
+            <ul>
+              <li><button onClick={() => PortfolioChange('website')}>Websites</button></li>
+              <li><button onClick={() => PortfolioChange('apps')}>Aplicativos</button></li>
+              <li><button onClick={() => PortfolioChange('sistema')}>Sistemas</button></li>
+              <li><button onClick={() => PortfolioChange('loja-virtual')}>Lojas Virtuais</button></li>
+              <li><button onClick={() => PortfolioChange('ebook')}>Ebooks</button></li>
+              <li><button onClick={() => PortfolioChange('identidade-visual')}>Identidade Visual</button></li>              
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div className="work">          
         {info?.map((info, chave) => (
             <Parallax
             blur={{ min: -35, max: 35 }}
@@ -51,7 +89,10 @@ export default function PortfolioDiv() {
             </div>
             <div style={{ height: '100px' }} />
             </Parallax>
-        ))}
+        )
+        )
+        }
         </div>
+        </section>
         )
   }
