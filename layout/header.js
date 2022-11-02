@@ -3,9 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 
-export default function Header() {  
+export default function Header() { 
+  const { locale, locales, asPath } = useRouter(); 
     return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
@@ -22,22 +24,29 @@ export default function Header() {
             navbarScroll
           >
             <Nav.Item>
-            <Link href="/">Home</Link>
+            <Link href="/">{(locale === 'pt') ?('Ínicio') :('Home')}</Link>
             </Nav.Item>
             <Nav.Item>
-            <Link href="/curriculum" passHref>Curriculum</Link>
+            <Link href="/curriculum" passHref>{(locale === 'pt') ?('Curriculo') :('Curriculum')}</Link>
             </Nav.Item>
             <Nav.Item>
-            <Link href="/#work">Work</Link>
+            <Link href="/#work">{(locale === 'pt') ?('Projetos') :('Work')}</Link>
             </Nav.Item>
             <Nav.Item>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">{(locale === 'pt') ?('Contato') :('Contact')}</Link>
             </Nav.Item>
             <Nav.Item className="phone">
             <strong>+55 11 985988444</strong>
             </Nav.Item>
-            <Nav.Link href="#action2">EN</Nav.Link>
-            <Nav.Link href="#action2">PT</Nav.Link>
+            {locales.map((l, i) => {
+            return (
+              <Nav.Item key={i} className={l === locale ? 'selected' : ''}>
+                <Link href={asPath} locale={l}>
+                  {l}
+                </Link>
+              </Nav.Item>
+            );
+          })}
           </Nav>
         </Navbar.Collapse>
       </Container>

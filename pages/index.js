@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../layout/header'
@@ -7,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 import PortfolioDiv from '../components/portfolio';
 
 export default function Home() {
-
+  const { locale, locales, asPath } = useRouter();
   const [cat_portfolio, setCatPortfolio] = useState('website');
   const scroll2El = elID => {
     window.scrollTo({
@@ -34,6 +36,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+
+      
       <main className="main">
 
 
@@ -42,15 +46,23 @@ export default function Home() {
               <div className="row d-flex col-content">
                 <div className='col col-md-8 col-flex'>
                   <h1 className='titulo'>
-                    Hi! 👋 I am Herbert,
-                    UI/UX designer
-                    Front-end
+                    {(locale === 'pt') ?(
+                    'Oi! 👋 Eu sou o Herbert,'+
+                    'UI/UX designer'+
+                    'Front-end')
+                    :(
+                      'Hi! 👋 I am Herbert,'+
+                      'UI/UX designer'+
+                      'Front-end'
+                    )}
                   </h1>
                   <Button className="learn-more">
                   <span className="circle" aria-hidden="true">
                     <span className="icon arrow"></span>
                   </span>
-                  <span className="button-text" goto="work" onClick={onBtnClick}>SEE MY WORKS</span>
+                  <span className="button-text" goto="work" onClick={onBtnClick}> 
+                  {(locale === 'pt') ?('PROJETOS'):('SEE MY WORKS')}
+                  </span>
                 </Button>
                 </div>
 

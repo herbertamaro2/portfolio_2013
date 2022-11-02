@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { useRouter } from 'next/router';
 export default function Footer(){
+    const { locale, locales, asPath } = useRouter(); 
     return (
         <footer>
             <div className="footer">
@@ -12,7 +13,7 @@ export default function Footer(){
                     </Link>
                 </div>
                 <ul className="l-footer">
-                    <li>❤️️ Desenvolvido em Next.js</li>
+                    <li>❤️️ {(locale === 'pt') ?('Desenvolvido em Next.js') :('Created by Next.js')}</li>
                     <li><a href="https://herbertamaro.me" target="_blank" rel="noreferrer">#</a></li>
                  </ul>         
             </div>

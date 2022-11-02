@@ -463,7 +463,8 @@ width: 32px;
   list-style-type: none;
 }
 
-.work{
+#work, .work{
   width: 100%;
   float: left;
 }
+

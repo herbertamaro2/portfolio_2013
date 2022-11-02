@@ -1,16 +1,14 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../../layout/header'
 import Footer from '../../layout/footer'
-import Button from 'react-bootstrap/Button';
 import React from 'react'
+import { useRouter } from 'next/router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 export default function Contact() {
-  
-
+    const { locale, locales, asPath } = useRouter(); 
 
     return (
         <div>
@@ -23,7 +21,9 @@ export default function Contact() {
         <div className="container mt-5 px-5">
         <div className='row pagina-contato' >
             <div className='col-12 px-5'>
-            <h2 className="mb-3 titulo"><FontAwesomeIcon icon={faPhone} /> Fale Comigo</h2>
+            <h2 className="mb-3 titulo">
+                <FontAwesomeIcon icon={faPhone} /> {(locale === 'pt') ?('Fale Comigo'):('Talk to me')}
+                </h2>
             </div>
             <div className='col-6 col-md-3 list-contato'>                
                 <figure className='icon-contato'>
@@ -36,7 +36,7 @@ export default function Contact() {
                 <figure className='icon-contato'>
                 <FontAwesomeIcon icon={faPhone} />
                 </figure>
-                <h5>Telefone</h5>
+                <h5>{(locale === 'pt') ?('Telefone'):('Phone')}</h5>
                 +353 83 381 8131
             </div>
             <div className='col-6 col-md-3 list-contato'>                

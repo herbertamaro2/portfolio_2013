@@ -3,8 +3,12 @@
 import Head from 'next/head'
 import Header from '../../layout/header'
 import Footer from '../../layout/footer'
-import Button from 'react-bootstrap/Button';
-export default function Curriculum() {  
+import { useRouter } from 'next/router'
+
+export default function Curriculum() { 
+const { locale, locales, asPath } = useRouter();
+
+
     return (
         <div>
         <Head>
@@ -37,59 +41,68 @@ export default function Curriculum() {
 
 					<div className="yui-gf">
 						<div className="yui-u first">
-							<h2>Profile</h2>
+							<h2>{(locale === 'pt') ?('Perfil'):('Profile')}</h2>
 						</div>
 						<div className="yui-u">
 							<p className="enlarge">
-								Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
+								{(locale === 'pt') ?('Evolua progressivamente ideias multiplataforma antes de infomediários impactantes. Visualize energicamente as iniciativas táticas antes dos catalisadores de mudança de mídia cruzada.')
+								:('Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. ')}
+								
 							</p>
 						</div>
 					</div>
 
 					<div className="yui-gf">
 						<div className="yui-u first">
-							<h2>Skills</h2>
+							<h2>{(locale === 'pt') ?('Habilidades'):('Skills')}</h2>
 						</div>
 						<div className="yui-u">
 
 								<div className="talent">
 									<h2>Web Design</h2>
-									<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
+									<p>{(locale === 'pt') ?('Explorar assertivamente iniciativas sem fio em vez de competências essenciais sinérgicas.'):('Assertively exploit wireless initiatives rather than synergistic core competencies.')}	</p>
 								</div>
 
 								<div className="talent">
-									<h2>Interface Design</h2>
-									<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
+									<h2>{(locale === 'pt') ?('Design de Interface'):('Interface Design')}</h2>
+									<p>{(locale === 'pt') ?('Simplifique com credibilidade o valor de missão crítica com funcionalidades multifuncionais.'):('Credibly streamline mission-critical value with multifunctional functionalities.')}</p>
 								</div>
 
 								<div className="talent">
-									<h2>Project Direction</h2>
-									<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
+									<h2>{(locale === 'pt') ?('Direção de Projetos'):('Project Direction')}</h2>
+									<p>{(locale === 'pt') ?('Capacidade comprovada de liderar e gerenciar uma ampla variedade de projetos de design e desenvolvimento em equipes e situações independentes.'):('Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.')}</p>
 								</div>
 						</div>
 					</div>
 
 					<div className="yui-gf">
 						<div className="yui-u first">
-							<h2>Technical</h2>
+							<h2>{(locale === 'pt') ?('Technical'):('Técnico')}</h2>
 						</div>
 						<div className="yui-u">
 							<ul className="talent">
-								<li>XHTML</li>
-								<li>CSS</li>
-								<li className="last">Javascript</li>
+								<li>Javascript</li>
+								<li>Node.js</li>
+								<li>React.js</li>
+								<li>Next.js</li>
+								<li>Jest</li>
+								<li className="last">Vue.js</li>
 							</ul>
 
 							<ul className="talent">
-								<li>Jquery</li>
-								<li>PHP</li>
-								<li className="last">CVS / Subversion</li>
+								<li>Laravel</li>
+								<li>Magento</li>
+								<li>Wordpress/Woocommerce</li>
+								<li>VTEX</li>
+								<li className="last">MySQL, MongoDB, Firebase</li>
 							</ul>
 
 							<ul className="talent">
-								<li>OS X</li>
-								<li>Windows XP/Vista</li>
-								<li className="last">Linux</li>
+								<li>Figma</li>
+								<li>Photoshop</li>
+								<li>Indesign</li>
+								<li>Ilustrator</li>
+								<li className="last">HTML, CSS</li>
 							</ul>
 						</div>
 					</div>
@@ -97,7 +110,7 @@ export default function Curriculum() {
 					<div className="yui-gf">
 	
 						<div className="yui-u first">
-							<h2>Experience</h2>
+							<h2>{(locale === 'pt') ?('Experience'):('Experiência')}</h2>
 						</div>
 
 						<div className="yui-u">
@@ -106,32 +119,37 @@ export default function Curriculum() {
 								<h2>Vaivo</h2>
 								<h3>Frontend Developer</h3>
 								<h4>2020</h4>
-								<p>Responsible for apply received layout from Adobe XD to be applied Laravel and Vuejs
-Maintenance of the trade platform and add features</p>
+								<p>{(locale === 'pt') ?('Responsável por aplicar o layout recebido do Adobe XD para ser aplicado Laravel e Vuejs Manutenção da plataforma de negociação e adição de recursos')
+								:('Responsible for apply received layout from Adobe XD to be applied Laravel and Vuejs Maintenance of the trade platform and add features')}</p>
 							</div>
 
 							<div className="job">
 								<h2>WebFamily Agência Digital</h2>
 								<h3>Frontend Developer</h3>
 								<h4>2015-2020</h4>
-								<p>esponsible to create websites from zero (design to programming).
-Responsible for creating and maintaining the credit analysis platform (main project of the agency)
-Wordpress - VTEX - Vuejs - Laravel - Magento</p>
+								<p>{(locale === 'pt') ?('Responsável por criar sites do zero (design à programação).'+
+'Responsável pela criação e manutenção da plataforma de análise de crédito (projeto principal da agência)'+
+'Wordpress - VTEX - Vuejs - Laravel - Magento')
+								:('Responsible to create websites from zero (design to programming).'+
+								'Responsible for creating and maintaining the credit analysis platform (main project of the agency)'+
+								'Wordpress - VTEX - Vuejs - Laravel - Magento')}</p>
 							</div>
 
 							<div className="job">
 								<h2>Grupo THX</h2>
 								<h3>Webdesigner</h3>
 								<h4>2014-2015</h4>
-								<p>Responsible to create websites from zero (design to programming)  Teamwork in the development of some sites, creation of flyer, photographic books, business cards, banner, banners, etc.</p>
+								<p>{(locale === 'pt') ?('Responsável por criar sites do zero (design a programação) Trabalho em equipe no desenvolvimento de alguns sites, criação de flyer, livros fotográficos, cartões de visita, banner, banners, etc.')
+								:('Responsible to create websites from zero (design to programming)  Teamwork in the development of some sites, creation of flyer, photographic books, business cards, banner, banners, etc.')}</p>
 							</div>
 
 
 							<div className="job last">
 								<h2>My Connect Midia</h2>
-								<h3>Designer Gráfico</h3>
+								<h3>{(locale === 'pt') ?('Designer Gráfico'):('Graphic Design')}</h3>
 								<h4>2012-2014</h4>
-								<p>Development of ELLITE Magazine, Teamwork in the development of some sites, creation of flyer, photographic books, business cards, banner, banners, etc.</p>
+								<p>{(locale === 'pt') ?('Desenvolvimento da Revista ELLITE, Trabalho em equipe no desenvolvimento de alguns sites, criação de flyer, livros fotográficos, cartões de visita, banner, banners, etc.')
+								:('Development of ELLITE Magazine, Teamwork in the development of some sites, creation of flyer, photographic books, business cards, banner, banners.')}</p>
 							</div>
 
 						</div>
@@ -140,11 +158,12 @@ Wordpress - VTEX - Vuejs - Laravel - Magento</p>
 
 					<div className="yui-gf last">
 						<div className="yui-u first">
-							<h2>Education</h2>
+							<h2>{(locale === 'pt') ?('Educação'):('Education')}</h2>
 						</div>
 						<div className="yui-u">
-							<h2>Indiana University - Bloomington, Indiana</h2>
-							<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+							<h2>Grifith College - Dublin</h2>
+							<h3>{(locale === 'pt') ?('Inglês'):('English')} &mdash; <strong>2018</strong></h3>
+							<span>{(locale === 'pt') ?('Intercâmbio'):('Language Exchange')}</span>							
 						</div>
 					</div>
 
@@ -154,7 +173,7 @@ Wordpress - VTEX - Vuejs - Laravel - Magento</p>
 		</div>
 
 		<div id="ft">
-			<p>Jonathan Doe &mdash; herbert.webdesigner@gmail.com&mdash; (313) - 867-5309</p>
+			<p>Herbert Amaro Santana &mdash; herbert.webdesigner@gmail.com&mdash; +55 (11) 98598-8444</p>
 		</div>
         </div>
         </main>

@@ -1,13 +1,24 @@
 [
   {
+    
     "nome": "Rw Torres Ltda",
     "categoria": "website",
-    "descricao": "Lorem Ipsum",
+    "descricao": "English",
+    "locale": "en",
     "image": "/fundo1.jpg",
     "link": "/teste"
   },
   {
     "nome": "Rw Torres Ltda",
+    "categoria": "website",
+    "locale": "pt",
+    "descricao": "Portugues",
+    "image": "/fundo1.jpg",
+    "link": "/teste"
+  },
+  {
+    "nome": "Rw Torres Ltda",
+    "locale": "pt",
     "categoria": "sistema",
     "descricao": "Lorem Ipsum",
     "image": "/fundo1.jpg",
@@ -16,6 +27,7 @@
   {
     "nome": "Rw Torres Ltda",
     "categoria": "ebook",
+    "locale": "pt",
     "descricao": "Lorem Ipsum",
     "image": "/fundo1.jpg",
     "link": "/teste"
@@ -24,14 +36,9 @@
     "nome": "Rw Torres Ltda - Loja",
     "categoria": "loja-virtual",
     "descricao": "Lorem Ipsum",
-    "image": "/fundo1.jpg",
-    "link": "/teste"
-  },
-  {
-    "nome": "Rw Torres Ltda",
-    "categoria": "website",
-    "descricao": "Lorem Ipsum",
+    "locale": "pt",
     "image": "/fundo1.jpg",
     "link": "/teste"
   }
+  
 ]

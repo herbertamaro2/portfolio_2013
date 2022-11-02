@@ -2,8 +2,10 @@ import {useState, useEffect} from 'react';
 import Image from 'next/image'
 import Button from 'react-bootstrap/Button';
 import { Parallax, Background } from 'react-parallax';
+import { useRouter } from 'next/router'
 
 export default function PortfolioDiv() {
+  const { locale, locales, asPath } = useRouter(); 
   const [info, setInfo] = useState([]);
   const [loading, setLoading] = useState(true);
     
@@ -56,17 +58,17 @@ export default function PortfolioDiv() {
             <div className="sub-menu">
             <ul>
               <li><button onClick={() => PortfolioChange('website')}>Websites</button></li>
-              <li><button onClick={() => PortfolioChange('apps')}>Aplicativos</button></li>
-              <li><button onClick={() => PortfolioChange('sistema')}>Sistemas</button></li>
-              <li><button onClick={() => PortfolioChange('loja-virtual')}>Lojas Virtuais</button></li>
+              <li><button onClick={() => PortfolioChange('apps')}>{(locale === 'pt') ?('Aplicativos') :('Apps')}</button></li>
+              <li><button onClick={() => PortfolioChange('sistema')}>{(locale === 'pt') ?('Sistemas') :('Systems')}</button></li>
+              <li><button onClick={() => PortfolioChange('loja-virtual')}>{(locale === 'pt') ?('Loja Virtual') :('Ecommerce')}</button></li>
               <li><button onClick={() => PortfolioChange('ebook')}>Ebooks</button></li>
-              <li><button onClick={() => PortfolioChange('identidade-visual')}>Identidade Visual</button></li>              
+              <li><button onClick={() => PortfolioChange('identidade-visual')}>{(locale === 'pt') ?('Identidade Visual') :('Visual Identity')}</button></li>              
             </ul>
           </div>
           </div>
         </div>
         <div className="work">          
-        {info?.map((info, chave) => (
+        {info?.filter(p => p.locale === locale).map((info, chave) => (
             <Parallax
             blur={{ min: -35, max: 35 }}
             bgImageAlt="the dog"
