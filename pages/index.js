@@ -44,15 +44,14 @@ export default function Home() {
         <section className="content">
             <div className="container">
               <div className="row d-flex col-content">
-                <div className='col col-md-8 col-flex'>
+                <div className='col-12 col-md-8 col-flex'>
                   <h1 className='titulo'>
                     {(locale === 'pt') ?(
                     'Oi! 👋 Eu sou o Herbert, '+
-                    'UI/UX designer '+
-                    'Front-end')
+                    'o seu Front-end')
                     :(
                       'Hi! 👋 I am Herbert, '+
-                      'UI/UX designer '+
+                      'your'+
                       'Front-end'
                     )}
                   </h1>
@@ -66,7 +65,7 @@ export default function Home() {
                 </Button>
                 </div>
 
-                <div className='col col-md-4'>
+                <div className='col-12 col-md-4'>
                   <Image src="/eu.png" width={286} height={358} alt="Herbert Amaro Santana" priority />
                 </div>
               </div>
