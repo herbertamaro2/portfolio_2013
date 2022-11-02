@@ -77,7 +77,7 @@ const { locale, locales, asPath } = useRouter();
 
 					<div className="yui-gf">
 						<div className="yui-u first">
-							<h2>{(locale === 'pt') ?('Technical'):('Técnico')}</h2>
+							<h2>{(locale === 'pt') ?('Técnico'):('Technical')}</h2>
 						</div>
 						<div className="yui-u">
 							<ul className="talent">
