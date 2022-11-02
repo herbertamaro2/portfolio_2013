@@ -468,3 +468,86 @@ width: 32px;
   float: left;
 }
 
+@media(max-width: 768px){
+  .navbar-nav.navbar-nav-scroll {
+    max-height: initial !important;
+    justify-content: flex-start !important;
+  }
+
+  .yui-gc div.first, .yui-gd .yui-u {
+  width: 100%!important;
+  margin-left: 0;
+  }
+
+  .yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
+    width: 100% !important;
+    margin-left:0;
+  }
+  .yui-gf div.first {
+    width: 100% !important;
+  }
+  .yui-gf .yui-u {
+    width: 100% !important;
+  }
+  .talent {
+    width: 100% !important;
+    float: left;
+    padding: 10px 0 !important;
+}
+.content-cv{
+  text-align:center;
+  margin: 30px auto !important;
+}
+.job h4 {
+  position: relative !important;
+  top: 0 !important;
+  right: auto !important;
+}
+#hd h1 {
+  font-size: 33px !important;
+}
+p.enlarge {
+  padding: 20px 0;
+  padding-right: 0px !important;
+}
+
+p{
+  padding-right: 0 !important;
+}
+.navbar-toggler:focus{
+  box-shadow: none !important;
+  background: #eee;
+  color: #fff !important;
+}
+footer{
+  padding: 30px auto;
+}
+.navbar-nav .nav-item{
+    padding: 5px 0 !important;
+    text-align: center;
+    font-size: 19px;
+  }
+  .navbar-nav .nav-item.phone{
+  display: none;
+  }
+  .sub-menu ul{
+    flex-direction: column;
+  }
+  .content-parallax{
+    padding: 60px 40px;
+  }
+  button.learn-more{
+    margin:20px auto;
+  }
+  .col-content{
+    text-align: center;
+  }
+  .content h1{
+  font-size: 35px;
+  text-align:center;
+  margin-bottom: 0px !important;
+  }
+  .list-contato{
+    margin:20px auto;
+  }
+}

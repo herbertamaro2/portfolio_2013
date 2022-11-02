@@ -53,7 +53,7 @@ export default function PortfolioDiv() {
       <section id="work">
         <div className="titulo2">
           <div className="container">
-            <h1>Work</h1>
+            <h1>{(locale === 'pt') ?('Projetos') :('Work')}</h1>
 
             <div className="sub-menu">
             <ul>

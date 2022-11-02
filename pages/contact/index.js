@@ -25,28 +25,28 @@ export default function Contact() {
                 <FontAwesomeIcon icon={faPhone} /> {(locale === 'pt') ?('Fale Comigo'):('Talk to me')}
                 </h2>
             </div>
-            <div className='col-6 col-md-3 list-contato'>                
+            <div className='col-12 col-md-3 list-contato'>                
                 <figure className='icon-contato'>
                 <FontAwesomeIcon icon={faEnvelope} />
                 </figure>
                 <h5>Email</h5>
                 herbert.webdesigner@gmail.com
             </div>
-            <div className='col-6 col-md-3 list-contato'>                
+            <div className='col-12 col-md-3 list-contato'>                
                 <figure className='icon-contato'>
                 <FontAwesomeIcon icon={faPhone} />
                 </figure>
                 <h5>{(locale === 'pt') ?('Telefone'):('Phone')}</h5>
                 +353 83 381 8131
             </div>
-            <div className='col-6 col-md-3 list-contato'>                
+            <div className='col-12 col-md-3 list-contato'>                
                 <figure className='icon-contato'>
                 <FontAwesomeIcon icon={faGithub} />
                 </figure>
                 <h5>Github</h5>
                 herbertamaro2
             </div>
-            <div className='col-6 col-md-3 list-contato'>                
+            <div className='col-12 col-md-3 list-contato'>                
                 <figure className='icon-contato'>
                 <FontAwesomeIcon icon={faInstagram} />
                 </figure>

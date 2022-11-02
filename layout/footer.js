@@ -14,7 +14,7 @@ export default function Footer(){
                 </div>
                 <ul className="l-footer">
                     <li>❤️️ {(locale === 'pt') ?('Desenvolvido em Next.js') :('Created by Next.js')}</li>
-                    <li><a href="https://herbertamaro.me" target="_blank" rel="noreferrer">#</a></li>
+                    
                  </ul>         
             </div>
             <div className="whatsapp">
