@@ -47,12 +47,12 @@ export default function Home() {
                 <div className='col col-md-8 col-flex'>
                   <h1 className='titulo'>
                     {(locale === 'pt') ?(
-                    'Oi! 👋 Eu sou o Herbert,'+
-                    'UI/UX designer'+
+                    'Oi! 👋 Eu sou o Herbert, '+
+                    'UI/UX designer '+
                     'Front-end')
                     :(
-                      'Hi! 👋 I am Herbert,'+
-                      'UI/UX designer'+
+                      'Hi! 👋 I am Herbert, '+
+                      'UI/UX designer '+
                       'Front-end'
                     )}
                   </h1>
