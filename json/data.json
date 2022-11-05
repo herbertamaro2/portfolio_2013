@@ -125,39 +125,39 @@
     "categoria": "website",
     "descricao": "Lorem Ipsum",
     "locale": "pt",
-    "image": "/fundo1.jpg",
-    "link": "/teste"
+    "image": "/portfolio/web/preco-coisas.jpg",
+    "link": "https://preco-das-coisas.vercel.app"
   },
   {
     "nome": "Preço das Coisas",
     "categoria": "website",
     "descricao": "Lorem Ipsum",
     "locale": "en",
-    "image": "/fundo1.jpg",
-    "link": "/teste"
+    "image": "/portfolio/web/preco-coisas.jpg",
+    "link": "https://preco-das-coisas.vercel.app"
   },
   {
-    "nome": "Rifa.cash",
+    "nome": "Rw Torres",
     "categoria": "website",
     "descricao": "Lorem Ipsum",
     "locale": "pt",
-    "image": "/fundo1.jpg",
-    "link": "/teste"
+    "image": "/portfolio/web/rwtorres.jpg",
+    "link": "https://rwtorresltda.com.br"
   },
   {
-    "nome": "Rifa.cash",
+    "nome": "Rw Torres",
     "categoria": "website",
     "descricao": "Lorem Ipsum",
     "locale": "en",
-    "image": "/fundo1.jpg",
-    "link": "/teste"
+    "image": "/portfolio/web/rwtorres.jpg",
+    "link": "https://rwtorresltda.com.br"
   },
   {
     "nome": "Agencia de Idéias",
     "categoria": "website",
     "descricao": "Lorem Ipsum",
     "locale": "pt",
-    "image": "/fundo1.jpg",
+    "image": "/portfolio/web/agenciaideias.jpg",
     "link": "/teste"
   },
   {
@@ -165,7 +165,7 @@
     "categoria": "website",
     "descricao": "Lorem Ipsum",
     "locale": "en",
-    "image": "/fundo1.jpg",
+    "image": "/portfolio/web/agenciaideias.jpg",
     "link": "/teste"
   },
   {
@@ -173,7 +173,7 @@
     "categoria": "website",
     "descricao": "Lorem Ipsum",
     "locale": "pt",
-    "image": "/fundo1.jpg",
+    "image": "/portfolio/web/traveeling.jpg",
     "link": "/teste"
   },
   {
@@ -181,25 +181,10 @@
     "categoria": "website",
     "descricao": "Lorem Ipsum",
     "locale": "en",
-    "image": "/fundo1.jpg",
+    "image": "/portfolio/web/traveeling.jpg",
     "link": "/teste"
   },
-  {
-    "nome": "Ajude uma Vida",
-    "categoria": "website",
-    "descricao": "Lorem Ipsum",
-    "locale": "pt",
-    "image": "/fundo1.jpg",
-    "link": "/teste"
-  },
-  {
-    "nome": "Ajude uma Vida",
-    "categoria": "website",
-    "descricao": "Lorem Ipsum",
-    "locale": "en",
-    "image": "/fundo1.jpg",
-    "link": "/teste"
-  },
+ 
   {
     "nome": "Dekora3D",
     "categoria": "loja-virtual",
