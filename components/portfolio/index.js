@@ -81,8 +81,7 @@ export default function PortfolioDiv() {
             <div className="container content-parallax">
               <h1>{info.nome}</h1>
               <h3>{info.categoria}</h3>
-             
-              <Button className="learn-more">
+             <Button className="learn-more">
                       <span className="circle" aria-hidden="true">
                         <span className="icon arrow"></span>
                       </span>
