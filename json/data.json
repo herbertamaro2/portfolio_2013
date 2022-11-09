@@ -174,7 +174,7 @@
     "descricao": "Lorem Ipsum",
     "locale": "pt",
     "image": "/portfolio/web/traveeling.jpg",
-    "link": "/teste"
+    "link": "https://traveeling.com"
   },
   {
     "nome": "Traveeling",
@@ -182,7 +182,7 @@
     "descricao": "Lorem Ipsum",
     "locale": "en",
     "image": "/portfolio/web/traveeling.jpg",
-    "link": "/teste"
+    "link": "https://traveeling.com"
   },
  
   {
