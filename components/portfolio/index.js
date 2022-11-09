@@ -81,12 +81,12 @@ export default function PortfolioDiv() {
             <div className="container content-parallax">
               <h1>{info.nome}</h1>
               <h3>{info.categoria}</h3>
-              <p>{info.descricao}</p>
+             
               <Button className="learn-more">
                       <span className="circle" aria-hidden="true">
                         <span className="icon arrow"></span>
                       </span>
-                      <a href={info.link}><span className="button-text" >GO TO LINK</span></a>
+                      <a href={info.link}><span className="button-text" >{(locale === 'pt') ?('ACESSAR') :('GO TO LINK')}</span></a>
               </Button>
             </div>
             <div style={{ height: '100px' }} />

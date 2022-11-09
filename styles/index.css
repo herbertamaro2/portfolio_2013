@@ -478,7 +478,15 @@ width: 32px;
     max-height: initial !important;
     justify-content: flex-start !important;
   }
-
+  
+  .react-parallax-background-children {
+    width: 100%;
+  }
+  .react-parallax-background-children img{
+    max-width: 235%;
+    margin-left: -92% !important;
+    height: auto;
+  }
   .yui-gc div.first, .yui-gd .yui-u {
   width: 100%!important;
   margin-left: 0;
